@@ -1,3 +1,32 @@
-h1{
-	
+body{
+	background-color: #8B96AB;
+}
+
+#panel-outer{
+	background-color: #FF6C48;
+	margin: 3rem 0 0 0;
+	border-radius: 30px;
+	padding: 60px 0 0px 0;
+}
+
+#panel-inner{
+	background-color: #1E1E1E;
+	width: 100%;
+	margin: 0 2% 2% 2%;
+	border-radius: 30px;
+	padding: 50px;
+
+}
+
+#panel-content{
+	color: burlywood;
+}
+
+#hooksContainer{
+	color: greenyellow;
+	position: absolute;
+}
+
+.hook{
+	width: auto;
 }
