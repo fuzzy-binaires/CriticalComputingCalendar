@@ -6,7 +6,7 @@
 	<meta http-equiv="x-ua-compatible">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-   <link rel="stylesheet" href="../css/style.css"/>
+	<link rel="stylesheet" href="../css/style.css" />
 
 <body>
 
@@ -23,6 +23,21 @@
 		var footer = document.getElementsByTagName("footer");
 
 		// SCRIPT TO GET DATA AND FILL IN THE TAGS
+		var urls = ["md/entry01.md"];
+		xhrDoc = new XMLHttpRequest();
+		xhrDoc.open('GET', urls[0], true)
+		if (xhrDoc.overrideMimeType)
+			xhrDoc.overrideMimeType('text/plain; charset=x-user-defined')
+		xhrDoc.onreadystatechange = function () {
+			if (this.readyState == 4) {
+				if (this.status == 200) {
+					var data = this.response; //Here is a string of the text data 
+					console.log(data);
+				}
+
+			}
+		}
+		xhrDoc.send() //sending the request
 
 	</script>
 
