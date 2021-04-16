@@ -1,5 +1,5 @@
 date= 23.06.1912
-name= Alan Turinng
+name= Alan Turing
 source= https://en.wikipedia.org/wiki/Alan_Turing
 text= On June 23 1912, British English mathematician was born.
 Turing is widely considered to be the father of theoretical computer science and artificial intelligence.
