@@ -15,7 +15,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
 	<!-- <script src="https://kit.fontawesome.com/762ddd5ea0.js" crossorigin="anonymous"></script> -->
-
+	<script src="js/calendar_generator.js"></script>
 <body>
 
 	<div class="container vertical-center" id="global-center">
@@ -45,7 +45,7 @@
 				</div>
 
 			</div>
-			
+
 			<div class="column" id="panel-inner">
 
 
@@ -62,59 +62,6 @@
 		</div>
 	</div>
 
-	<script>
-
-
-		// SCRIPT TO GET DATA AND FILL IN THE TAGS
-		// getEphemerisFile(); // ARGUMENT = dateFile.md
-
-
-		function getEphemerisFile() {
-
-			var urls = ["md/entry01.md"];
-			xhrDoc = new XMLHttpRequest();
-			xhrDoc.open('GET', urls[0], true)
-			if (xhrDoc.overrideMimeType)
-				xhrDoc.overrideMimeType('text/plain; charset=x-user-defined')
-			xhrDoc.onreadystatechange = function () {
-				if (this.readyState == 4) {
-					if (this.status == 200) {
-						var data = this.response; //Here is a string of the text data 
-						console.log(data);
-						processRawData(data);
-					} else {
-
-					}
-
-				}
-			}
-			xhrDoc.send() //sending the request
-		}
-
-		function processRawData(rawData) {
-
-			var splitted = rawData.split("\n");
-			var separator = "=";
-			// DATE
-			date = splitted[0].split(separator)[1].trim();
-			document.getElementById("date").innerText = date;
-
-			// NAME
-			name = splitted[1].split(separator)[1].trim();
-			document.getElementById("name").innerText = name;
-
-			// SOURCE
-			source = splitted[2].split(separator)[1].trim();
-			document.getElementById("footer").innerText = source;
-
-			// DESCRIPTION
-			description = splitted[3].split(separator)[1].trim();
-			document.getElementById("description").innerText = description;
-
-
-		}
-
-	</script>
 
 </body>
 
