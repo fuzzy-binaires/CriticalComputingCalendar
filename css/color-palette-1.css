@@ -1,0 +1,29 @@
+:root{
+	--background-color: #D8DCE3;
+	--panel-outer-color: #6348ff;
+	--panel-inner-color: #1E1E1E;
+	--panel-hook-color: #FFC732;
+	--panel-title-color: #FFC732;
+	--text-color: #D8DCE3;
+	--date-back-color: #BC7798;
+}
+
+#panel-outer{
+	background-color: var(--panel-outer-color);
+}
+
+#panel-inner{
+	background-color: var(--panel-inner-color);
+}
+
+#panel-content{
+	color: var(--text-color);
+}
+
+.hook{
+	background-color: var(--background-color);
+}
+
+.hookMetal{
+	background-color: var(--panel-hook-color);
+}
