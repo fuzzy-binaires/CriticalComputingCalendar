@@ -9,13 +9,29 @@
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/style.css">
-
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
 	<!-- <script src="https://kit.fontawesome.com/762ddd5ea0.js" crossorigin="anonymous"></script> -->
+
+
+	<link rel="stylesheet" href="css/style.css">
+	<!-- <link rel="stylesheet" href="css/color-palette-1.css"> -->
+
+	<!-- COLOR PALETTE => CHOOSE CSS AT RANDOM -->
+	<script>
+		var colorPalette = "css/color-palette-" + Math.floor(Math.random() * 1.99) + ".css";
+		var domElement = document.createElement('link');
+		domElement.rel = 'stylesheet';
+		domElement.href = colorPalette;
+		document.getElementsByTagName('head')[0].appendChild(domElement);
+	</script>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap" rel="stylesheet">
+
 	<script src="js/calendar_generator.js"></script>
+
 <body>
 
 	<div class="container vertical-center" id="global-center">
@@ -23,24 +39,36 @@
 		<div class="row text-center" id="panel-outer">
 
 			<div class="container" id="hooksContainer">
-				<div class="row">
-					<div class="col hook">
-						COLUMN
+				<div class="row" id="hooksRow">
+					<div class="hook">
+						<div class="hookMetal">
+							&nbsp;
+						</div>
 					</div>
-					<div class="col hook">
-						COLUMN
+					<div class="hook">
+						<div class="hookMetal">
+							&nbsp;
+						</div>
 					</div>
-					<div class="col hook">
-						COLUMN
+					<div class="hook">
+						<div class="hookMetal">
+							&nbsp;
+						</div>
 					</div>
-					<div class="col hook">
-						COLUMN
+					<div class="hook">
+						<div class="hookMetal">
+							&nbsp;
+						</div>
 					</div>
-					<div class="col hook">
-						COLUMN
+					<div class="hook">
+						<div class="hookMetal">
+							&nbsp;
+						</div>
 					</div>
-					<div class="col hook">
-						COLUMN
+					<div class="hook">
+						<div class="hookMetal">
+							&nbsp;
+						</div>
 					</div>
 				</div>
 
@@ -61,7 +89,6 @@
 			</div>
 		</div>
 	</div>
-
 
 </body>
 
