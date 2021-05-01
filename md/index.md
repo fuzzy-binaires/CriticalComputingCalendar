@@ -7,3 +7,4 @@
 02.10 = edith_clarke.md
 06.23 = emily_duncan.md
 12.21 = adele_goldstine.md
+03.07 = betty_holberton.md
