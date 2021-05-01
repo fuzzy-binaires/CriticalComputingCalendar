@@ -36,7 +36,7 @@
       var currentDate = getDateMonthDay();
       var candidates = [];
       let splitted = data.split("\n").forEach((item, i) => {
-          // skip comments this is lines starting wiht #
+          // skip comments this is lines starting with #
           if (/^\s*\#.*/.exec(item)){ return; }
 
           match = /(\d+\.\d+\s*)\=\s*(.*)/.exec(item)
@@ -63,12 +63,14 @@
       date = splitted[1].trim();
       name = splitted[2].trim();
       source = splitted[3].trim();
-      description = splitted[4].trim();
+      image = splitted[4].trim();
+      description = splitted[5].trim();
 
 			document.getElementById("date").innerText = date;
 	    document.getElementById("name").innerText = name;
       document.getElementById("footer").innerText = source;
       document.getElementById("description").innerText = description;
+      document.getElementById("image").src = image;
 
 
 		}
