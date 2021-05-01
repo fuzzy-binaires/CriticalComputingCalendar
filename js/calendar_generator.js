@@ -36,6 +36,9 @@
       var currentDate = getDateMonthDay();
       var candidates = [];
       let splitted = data.split("\n").forEach((item, i) => {
+          // skip comments this is lines starting wiht #
+          if (/^\s*\#.*/.exec(item)){ return; }
+
           match = /(\d+\.\d+\s*)\=\s*(.*)/.exec(item)
           if (match && match.length == 3 && currentDate == match[1].trim()){
             candidates = candidates.concat(match[2].split(/\s+/));
